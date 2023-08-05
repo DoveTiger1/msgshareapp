@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>message sharing app</title>
+  </head>
+  <body>
+    <h1 class="card-title text-capitalize text-center title">
+      Message Sharing App
+    </h1>
+
+    <div class="form-container">
+      <div id="message-show" class="panel hide">
+        <h1></h1>
+        <a href="index.html" class="create-btn">Create your own message</a>
+      </div>
+      <form id="form" class="panel">
+        <label class="label" for="message">Enter a Secret Message</label>
+        <input type="text" id="message-input" class="input" />
+        <button type="submit" class="create-btn">create</button>
+      </form>
+      <div id="message-link" class="panel hide">
+        <label for="link-input" class="label">
+          Share this link with a friend
+        </label>
+        <input type="text" id="link-input" class="input" />
+        <!-- <button type="submit"  class="btns">refresh</button> -->
+      </div>
+    </div>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
